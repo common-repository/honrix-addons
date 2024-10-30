@@ -1,0 +1,85 @@
+.honrix-left {
+  text-align: left;
+}
+
+.honrix-center {
+  text-align: center;
+}
+
+.honrix-right {
+  text-align: right;
+}
+
+.honrix-team-member .avatar-social {
+  position: relative;
+  display: inline-block;
+}
+.honrix-team-member .avatar {
+  overflow: hidden;
+}
+
+.honrix-team-member .avatar img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.honrix-team-member .social-media {
+  padding-left: 0;
+  list-style-type: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.honrix-team-member .social-media a {
+  margin-left: 3px;
+  margin-right: 3px;
+  width: 2em;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.honrix-team-member .name {
+  display: flex;
+}
+
+.honrix-team-member .title {
+  display: flex;
+}
+
+@media (min-width: 991px) {
+  .honrix-team-member.honrix-animation-rotate:hover .avatar img {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+
+  .honrix-team-member.honrix-animation-zoom:hover .avatar img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .honrix-team-member .social-media a {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+    -webkit-transition: all 0.1s ease-in-out 0s;
+    transition: all 0.1s ease-in-out 0s;
+    transition-delay: 0s;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .honrix-team-member:hover .social-media a {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}

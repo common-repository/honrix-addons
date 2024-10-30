@@ -1,0 +1,15 @@
+.hrix-logo.logo-right img {
+  margin: 0 0 0 auto;
+}
+
+.hrix-logo.logo-center img {
+  margin: 0 auto;
+}
+
+.hrix-logo.logo-left img {
+  margin: 0 auto 0 0;
+}
+
+.hrix-logo a {
+  display: flex;
+}
